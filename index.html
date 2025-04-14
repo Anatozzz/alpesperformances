@@ -478,37 +478,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Form submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const service = document.getElementById('service').value;
-            
-            // Show success message
-            const successMsg = document.createElement('div');
-            successMsg.className = 'fixed bottom-6 right-6 bg-alpine-500 text-white px-6 py-4 rounded-lg shadow-xl flex items-center animate-fade-in';
-            successMsg.innerHTML = `
-                <i class="fas fa-check-circle text-xl mr-3"></i>
-                <div>
-                    <p class="font-medium">Merci ${name} !</p>
-                    <p class="text-sm">Votre demande pour "${service}" a bien été envoyée.</p>
-                </div>
-            `;
-            document.body.appendChild(successMsg);
-            
-            // Remove after 5 seconds
-            setTimeout(() => {
-                successMsg.classList.add('animate-fade-out');
-                setTimeout(() => successMsg.remove(), 500);
-            }, 5000);
-            
-            // Reset form
-            this.reset();
-        });
         
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
