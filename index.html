@@ -399,65 +399,51 @@
                     </div>
                 </div>
                 
-                <!-- Contact Form + Carte -->
-<div class="lg:w-1/2 flex flex-col lg:flex-row gap-6">
-    <!-- Formulaire -->
-    <div class="w-full lg:w-1/2">
-        <div class="bg-white rounded-lg shadow-lg p-8 h-full">
-            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Demande de devis</h3>
-            <form action="https://formsubmit.co/alpes.performances74@gmail.com" method="POST" class="space-y-5 h-full">
-                <input type="hidden" name="_next" value="https://alpesperformances.netlify.app/merci.html">
-                <input type="hidden" name="_captcha" value="false">
-                <div>
-                    <label for="name" class="block text-gray-700 mb-2">Votre nom</label>
-                    <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
+                <!-- Contact Form -->
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Demande de devis</h3>
+                        <form action="https://formsubmit.co/alpes.performances74@gmail.com" method="POST" class="space-y-5">
+    <input type="hidden" name="_next" value="https://alpesperformances.netlify.app/merci.html">
+    <input type="hidden" name="_captcha" value="false">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Votre nom</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 text-gray-800 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-2">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 text-gray-800 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
+                            </div>
+                            <div>
+                                <label for="service" class="block text-gray-700 mb-2">Service souhaité</label>
+                                <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 text-gray-800 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
+                                    <option value="">Sélectionnez un service</option>
+                                    <option value="Taille de haie">Taille de haie</option>
+                                    <option value="Création de terrasse">Création de terrasse</option>
+                                    <option value="Nettoyage extérieur">Nettoyage extérieur</option>
+                                    <option value="Entretien de jardin">Entretien de jardin</option>
+                                    <option value="Plantation">Plantation</option>
+                                    <option value="Autre">Autre projet</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Détails du projet</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 text-gray-800 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-alpine-500 hover:bg-alpine-600 text-white font-medium py-3 px-4 rounded-lg transition flex items-center justify-center">
+                                Envoyer la demande
+                                <i class="fas fa-paper-plane ml-3"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
-                <div>
-                    <label for="email" class="block text-gray-700 mb-2">Email</label>
-                    <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 text-gray-800 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
-                </div>
-                <div>
-                    <label for="phone" class="block text-gray-700 mb-2">Téléphone</label>
-                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 text-gray-800 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
-                </div>
-                <div>
-                    <label for="service" class="block text-gray-700 mb-2">Service souhaité</label>
-                    <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 text-gray-800 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
-                        <option value="">Sélectionnez un service</option>
-                        <option value="Taille de haie">Taille de haie</option>
-                        <option value="Création de terrasse">Création de terrasse</option>
-                        <option value="Nettoyage extérieur">Nettoyage extérieur</option>
-                        <option value="Entretien de jardin">Entretien de jardin</option>
-                        <option value="Plantation">Plantation</option>
-                        <option value="Autre">Autre projet</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="message" class="block text-gray-700 mb-2">Détails du projet</label>
-                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 text-gray-800 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required></textarea>
-                </div>
-                <button type="submit" class="w-full bg-alpine-500 hover:bg-alpine-600 text-white font-medium py-3 px-4 rounded-lg transition flex items-center justify-center">
-                    Envoyer la demande
-                    <i class="fas fa-paper-plane ml-3"></i>
-                </button>
-            </form>
+            </div>
         </div>
-    </div>
-
-    <!-- Carte -->
-    <div class="w-full lg:w-1/2">
-        <div class="rounded-lg overflow-hidden shadow-lg h-full">
-            <iframe 
-                class="w-full h-full min-h-[400px]"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2750.039573864539!2d6.481028515581958!3d46.372503879122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c32dd2d381ddb%3A0x84a4e20794f4e1e!2sThonon-les-Bains!5e0!3m2!1sfr!2sfr!4v1683121123456!5m2!1sfr!2sfr" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-        </div>
-    </div>
-</div>
-
+    </section>
     <!-- Footer -->
     <footer class="bg-alpine-800 text-white py-8">
         <div class="container mx-auto px-6">
