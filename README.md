@@ -1,2 +1,12 @@
-# alpesperformances
-site de d'entretien d'espaces verts 
+---
+title: ben
+emoji: 🐳
+colorFrom: blue
+colorTo: pink
+sdk: static
+pinned: false
+tags:
+  - deepsite
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
