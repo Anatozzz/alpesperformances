@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpesperformances - Paysagistes professionnels depuis 5 ans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        alpine: {
+                            50: '#f0f7eb',
+                            100: '#d6edd0',
+                            200: '#b5e0a8',
+                            300: '#7dce6a',
+                            400: '#4abd3e',
+                            500: '#2fa52a',
+                            600: '#238020',
+                            700: '#1a651a',
+                            800: '#145214',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in',
+                        'fade-out': 'fadeOut 0.5s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        fadeOut: {
+                            '0%': { opacity: '1' },
+                            '100%': { opacity: '0' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(74,189,62,0.05) 0%, rgba(255,255,255,1) 70%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#accueil" class="flex items-center">
+                <div class="w-10 h-10 bg-alpine-500 rounded-full flex items-center justify-center text-white font-semibold text-lg mr-3">
+                    AP
+                </div>
+                <span class="text-lg font-semibold text-gray-800">Alpesperformances</span>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#accueil" class="text-gray-600 hover:text-alpine-500 transition">Accueil</a>
+                <a href="#apropos" class="text-gray-600 hover:text-alpine-500 transition">Notre histoire</a>
+                <a href="#services" class="text-gray-600 hover:text-alpine-500 transition">Services</a>
+                <a href="#contact" class="text-gray-600 hover:text-alpine-500 transition">Contact</a>
+            </nav>
+            
+            <a href="#contact" class="hidden md:block bg-alpine-500 hover:bg-alpine-600 text-white font-medium py-2 px-5 rounded-md transition">
+                Devis
+            </a>
+            
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero-bg py-20 md:py-28">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <div class="mb-6">
+                        <span class="inline-block bg-alpine-100 text-alpine-600 px-3 py-1 rounded-full text-sm font-medium mb-4">
+                            Expertise locale depuis 5 ans
+                        </span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        Paysagistes passionnés<br>
+                        <span class="text-alpine-500">au cœur du Léman</span>
+                    </h1>
+                    
+                    <p class="text-lg text-gray-600 mb-8">
+                        Depuis 2020, notre équipe de professionnels transforme les espaces extérieurs du bassin lémanique avec un savoir-faire artisanal et une connaissance intime des spécificités locales.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-alpine-500 hover:bg-alpine-600 text-white font-medium py-3 px-6 rounded-md transition text-center">
+                            Demander un devis
+                        </a>
+                        <a href="#services" class="border border-gray-300 hover:border-alpine-500 text-gray-700 hover:text-alpine-600 font-medium py-3 px-6 rounded-md transition text-center">
+                            Nos services
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1600566752227-967f0c47cb1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Jardin bien entretenu" 
+                         class="rounded-lg shadow-md w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Une équipe locale au service de votre extérieur</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Originaires de la région, nous comprenons parfaitement les défis et opportunités qu'offrent les paysages lémaniques.
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Équipe Alpesperformances" 
+                         class="rounded-lg shadow-md w-full">
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Notre histoire</h3>
+                            <p class="text-gray-600">
+                                Fondée en 2020 par des passionnés du paysage alpin, Alpesperformances rassemble aujourd'hui une équipe de professionnels dédiés à la création et l'entretien d'espaces extérieurs harmonieux.
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 p-5 rounded-lg">
+                                <div class="w-10 h-10 bg-alpine-100 rounded-full flex items-center justify-center text-alpine-500 mb-3">
+                                    <i class="fas fa-mountain"></i>
+                                </div>
+                                <h4 class="font-medium text-gray-900 mb-1">Adaptation locale</h4>
+                                <p class="text-sm text-gray-600">Solutions parfaitement adaptées au climat et aux sols de la région</p>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-5 rounded-lg">
+                                <div class="w-10 h-10 bg-alpine-100 rounded-full flex items-center justify-center text-alpine-500 mb-3">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <h4 class="font-medium text-gray-900 mb-1">Approche sur mesure</h4>
+                                <p class="text-sm text-gray-600">Chaque projet bénéficie d'une attention personnalisée</p>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-5 rounded-lg">
+                                <div class="w-10 h-10 bg-alpine-100 rounded-full flex items-center justify-center text-alpine-500 mb-3">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h4 class="font-medium text-gray-900 mb-1">Écologie pratique</h4>
+                                <p class="text-sm text-gray-600">Méthodes respectueuses de l'environnement alpin</p>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-5 rounded-lg">
+                                <div class="w-10 h-10 bg-alpine-100 rounded-full flex items-center justify-center text-alpine-500 mb-3">
+                                    <i class="fas fa-calendar-check"></i>
+                                </div>
+                                <h4 class="font-medium text-gray-900 mb-1">5 ans d'expérience</h4>
+                                <p class="text-sm text-gray-600">Une expertise consolidée depuis 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Nos services paysagers</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Des solutions complètes pour tous vos besoins d'aménagement et d'entretien extérieur.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                    <div class="w-12 h-12 bg-alpine-100 rounded-lg flex items-center justify-center text-alpine-500 mb-4">
+                        <i class="fas fa-cut text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Taille de haie</h3>
+                    <p class="text-gray-600 mb-4">Taille précise et esthétique pour des haies nettes et uniformes.</p>
+                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Entretien</span>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                    <div class="w-12 h-12 bg-alpine-100 rounded-lg flex items-center justify-center text-alpine-500 mb-4">
+                        <i class="fas fa-tree text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Terrasses sur mesure</h3>
+                    <p class="text-gray-600 mb-4">Conception de terrasses adaptées au climat alpin.</p>
+                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Aménagement</span>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                    <div class="w-12 h-12 bg-alpine-100 rounded-lg flex items-center justify-center text-alpine-500 mb-4">
+                        <i class="fas fa-spray-can text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Nettoyage extérieur</h3>
+                    <p class="text-gray-600 mb-4">Redonner leur éclat à vos sols et surfaces extérieures.</p>
+                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Rénovation</span>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                    <div class="w-12 h-12 bg-alpine-100 rounded-lg flex items-center justify-center text-alpine-500 mb-4">
+                        <i class="fas fa-spa text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Entretien de pelouse</h3>
+                    <p class="text-gray-600 mb-4">Programme complet pour un gazon impeccable toute l'année.</p>
+                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Entretien</span>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                    <div class="w-12 h-12 bg-alpine-100 rounded-lg flex items-center justify-center text-alpine-500 mb-4">
+                        <i class="fas fa-seedling text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Plantations adaptées</h3>
+                    <p class="text-gray-600 mb-4">Sélection de végétaux parfaitement adaptés à votre terrain.</p>
+                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Aménagement</span>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                    <div class="w-12 h-12 bg-alpine-100 rounded-lg flex items-center justify-center text-alpine-500 mb-4">
+                        <i class="fas fa-recycle text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Gestion des déchets</h3>
+                    <p class="text-gray-600 mb-4">Évacuation et recyclage écologique de vos déchets verts.</p>
+                    <span class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Écologie</span>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#contact" class="inline-flex items-center bg-alpine-500 hover:bg-alpine-600 text-white font-medium py-3 px-6 rounded-md transition">
+                    Parler de votre projet
+                    <i class="fas fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Ce que disent nos clients</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    La satisfaction de nos clients est au cœur de notre démarche professionnelle.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-alpine-100 rounded-full flex items-center justify-center text-alpine-500 font-medium text-sm mr-4">
+                            MD
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Marie D.</h4>
+                            <p class="text-sm text-gray-500">Thonon-les-Bains</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Alpesperformances a transformé notre jardin en un espace où nous prenons plaisir à passer du temps. Leur connaissance des plantes locales est impressionnante."
+                    </p>
+                    <div class="mt-4 text-alpine-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-alpine-100 rounded-full flex items-center justify-center text-alpine-500 font-medium text-sm mr-4">
+                            PL
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Pierre L.</h4>
+                            <p class="text-sm text-gray-500">Évian-les-Bains</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Notre terrasse en bois est magnifique et résiste parfaitement aux hivers alpins. Un travail d'une qualité exceptionnelle, réalisé dans les délais."
+                    </p>
+                    <div class="mt-4 text-alpine-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-alpine-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Prêt à transformer vos extérieurs ?</h2>
+                <p class="text-lg text-alpine-100 max-w-2xl mx-auto">
+                    Discutons de votre projet lors d'un rendez-vous sans engagement.
+                </p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-10 max-w-6xl mx-auto">
+                <!-- Contact Info -->
+                <div class="lg:w-1/2">
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-6">Coordonnées</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="bg-alpine-500 p-3 rounded-lg mr-4">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Téléphone</p>
+                                        <p class="text-alpine-100">06 73 18 29 71</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-alpine-500 p-3 rounded-lg mr-4">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Email</p>
+                                        <p class="text-alpine-100">alpes.performances@icloud.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-alpine-500 p-3 rounded-lg mr-4">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Zone d'intervention</p>
+                                        <p class="text-alpine-100">Bassin lémanique (Genève à Thonon)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold mb-6">Horaires</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between">
+                                    <span>Lundi - Dimanche</span>
+                                    <span class="font-medium">7h - 19h</span>
+                                </div>
+                                <p class="text-alpine-200 text-sm">
+                                    Nous nous adaptons à vos disponibilités pour les rendez-vous sur site.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Demande de devis</h3>
+                        <form id="contactForm" class="space-y-5">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Votre nom</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-2">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
+                            </div>
+                            <div>
+                                <label for="service" class="block text-gray-700 mb-2">Service souhaité</label>
+                                <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required>
+                                    <option value="">Sélectionnez un service</option>
+                                    <option value="Taille de haie">Taille de haie</option>
+                                    <option value="Création de terrasse">Création de terrasse</option>
+                                    <option value="Nettoyage extérieur">Nettoyage extérieur</option>
+                                    <option value="Entretien de jardin">Entretien de jardin</option>
+                                    <option value="Plantation">Plantation</option>
+                                    <option value="Autre">Autre projet</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Détails du projet</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alpine-500 focus:border-alpine-500" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-alpine-500 hover:bg-alpine-600 text-white font-medium py-3 px-4 rounded-lg transition flex items-center justify-center">
+                                Envoyer la demande
+                                <i class="fas fa-paper-plane ml-3"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-alpine-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-alpine-500 rounded-full flex items-center justify-center text-white font-semibold text-lg mr-3">
+                            AP
+                        </div>
+                        <span class="text-lg font-semibold">Alpesperformances</span>
+                    </div>
+                    <p class="mt-2 text-alpine-300 text-sm">Paysagistes professionnels depuis 2020</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-alpine-300 hover:text-white transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-alpine-300 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-alpine-300 hover:text-white transition">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-alpine-300 text-sm">© 2025 Alpesperformances. Tous droits réservés.</p>
+                    <p class="text-alpine-400 text-xs mt-1">SIRET: 123 456 789 00000</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const service = document.getElementById('service').value;
+            
+            // Show success message
+            const successMsg = document.createElement('div');
+            successMsg.className = 'fixed bottom-6 right-6 bg-alpine-500 text-white px-6 py-4 rounded-lg shadow-xl flex items-center animate-fade-in';
+            successMsg.innerHTML = `
+                <i class="fas fa-check-circle text-xl mr-3"></i>
+                <div>
+                    <p class="font-medium">Merci ${name} !</p>
+                    <p class="text-sm">Votre demande pour "${service}" a bien été envoyée.</p>
+                </div>
+            `;
+            document.body.appendChild(successMsg);
+            
+            // Remove after 5 seconds
+            setTimeout(() => {
+                successMsg.classList.add('animate-fade-out');
+                setTimeout(() => successMsg.remove(), 500);
+            }, 5000);
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Anat0Zzz/ben" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
