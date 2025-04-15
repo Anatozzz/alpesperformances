@@ -66,17 +66,16 @@
   </style>
 </head>
 <body class="font-sans text-gray-800 antialiased">
-  <!-- Header amélioré -->
+  <!-- Header Responsive -->
 <header class="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    
-    <!-- Logo avec image -->
-<a href="#accueil" class="flex items-center gap-3">
-  <img src="https://raw.githubusercontent.com/Anatozzz/alpesperformances/main/logo.png" alt="Logo Alpesperformances" class="w-10 h-10 object-contain rounded-full shadow-sm" />
-  <span class="text-xl font-bold text-gray-800">Alpesperformances</span>
-</a>
+    <!-- Logo -->
+    <a href="#accueil" class="flex items-center gap-3">
+      <img src="https://raw.githubusercontent.com/Anatozzz/alpesperformances/main/logo.png" alt="Logo Alpesperformances" class="w-10 h-10 object-contain rounded-full shadow-sm" />
+      <span class="text-xl font-bold text-gray-800">Alpesperformances</span>
+    </a>
 
-    <!-- Menu Desktop -->
+    <!-- Menu desktop -->
     <nav class="hidden md:flex space-x-6 text-sm font-medium">
       <a href="#accueil" class="text-gray-600 hover:text-alpine-500 transition">Accueil</a>
       <a href="#apropos" class="text-gray-600 hover:text-alpine-500 transition">Notre histoire</a>
@@ -84,15 +83,24 @@
       <a href="#contact" class="text-gray-600 hover:text-alpine-500 transition">Contact</a>
     </nav>
 
-    <!-- CTA Button -->
+    <!-- Bouton devis -->
     <a href="#contact" class="hidden md:inline-block bg-alpine-500 hover:bg-alpine-600 text-white font-semibold py-2 px-5 rounded-full transition shadow-sm">
       Demander un devis
     </a>
 
-    <!-- Menu Burger Mobile -->
-    <button class="md:hidden text-gray-600">
-      <i class="fas fa-bars text-xl"></i>
+    <!-- Menu burger -->
+    <button id="burgerBtn" class="md:hidden text-gray-600 text-2xl">
+      <i class="fas fa-bars"></i>
     </button>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobileMenu" class="md:hidden hidden flex-col items-center bg-white px-6 py-4 space-y-4 border-t border-gray-100">
+    <a href="#accueil" class="block text-gray-700 font-medium">Accueil</a>
+    <a href="#apropos" class="block text-gray-700 font-medium">Notre histoire</a>
+    <a href="#services" class="block text-gray-700 font-medium">Services</a>
+    <a href="#contact" class="block text-gray-700 font-medium">Contact</a>
+    <a href="#contact" class="block bg-alpine-500 hover:bg-alpine-600 text-white font-medium py-2 px-4 rounded-md transition">Devis gratuit</a>
   </div>
 </header>
 
