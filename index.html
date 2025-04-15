@@ -1,135 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpesperformances - Paysagistes professionnels depuis 5 ans</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        alpine: {
-                            50: '#f0f7eb',
-                            100: '#d6edd0',
-                            200: '#b5e0a8',
-                            300: '#7dce6a',
-                            400: '#4abd3e',
-                            500: '#2fa52a',
-                            600: '#238020',
-                            700: '#1a651a',
-                            800: '#145214',
-                        }
-                    },
-                    animation: {
-                        'fade-in': 'fadeIn 0.5s ease-in',
-                        'fade-out': 'fadeOut 0.5s ease-out'
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' }
-                        },
-                        fadeOut: {
-                            '0%': { opacity: '1' },
-                            '100%': { opacity: '0' }
-                        }
-                    }
-                }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpesperformances - Paysagistes professionnels depuis 5 ans</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            alpine: {
+              50: '#f0f7eb',
+              100: '#d6edd0',
+              200: '#b5e0a8',
+              300: '#7dce6a',
+              400: '#4abd3e',
+              500: '#2fa52a',
+              600: '#238020',
+              700: '#1a651a',
+              800: '#145214'
             }
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in',
+            'fade-out': 'fadeOut 0.5s ease-out'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            fadeOut: {
+              '0%': { opacity: '1' },
+              '100%': { opacity: '0' }
+            }
+          }
         }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        
-        .hero-bg {
-            background: linear-gradient(135deg, rgba(74,189,62,0.05) 0%, rgba(255,255,255,1) 70%);
-        }
-        
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+      }
+    }
+  </script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(74, 189, 62, 0.05) 0%, rgba(255, 255, 255, 1) 70%);
+    }
+
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 <body class="font-sans text-gray-800 antialiased">
-    <!-- Header -->
-    <header class="bg-white sticky top-0 z-50 border-b border-gray-100">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#accueil" class="flex items-center">
-                <div class="w-10 h-10 bg-alpine-500 rounded-full flex items-center justify-center text-white font-semibold text-lg mr-3">
-                    AP
-                </div>
-                <span class="text-lg font-semibold text-gray-800">Alpesperformances</span>
-            </a>
-            
-            <nav class="hidden md:flex space-x-8">
-                <a href="#accueil" class="text-gray-600 hover:text-alpine-500 transition">Accueil</a>
-                <a href="#apropos" class="text-gray-600 hover:text-alpine-500 transition">Notre histoire</a>
-                <a href="#services" class="text-gray-600 hover:text-alpine-500 transition">Services</a>
-                <a href="#contact" class="text-gray-600 hover:text-alpine-500 transition">Contact</a>
-            </nav>
-            
-            <a href="#contact" class="hidden md:block bg-alpine-500 hover:bg-alpine-600 text-white font-medium py-2 px-5 rounded-md transition">
-                Devis
-            </a>
-            
-            <button class="md:hidden text-gray-600">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
+  <!-- Header amélioré -->
+  <header class="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#accueil" class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-alpine-500 rounded-full flex items-center justify-center text-white font-semibold text-lg">
+          AP
         </div>
-    </header>
+        <span class="text-xl font-bold text-gray-800">Alpesperformances</span>
+      </a>
 
-    <!-- Hero Section -->
-    <section id="accueil" class="hero-bg py-20 md:py-28">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
-                    <div class="mb-6">
-                        <span class="inline-block bg-e-100 text-e-600 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                            Expertise locale depuis 5 ans
-                        </span>
-                    </div>
-                    
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                        Paysagistes passionnés<br>
-                        <span class="text-e-500">au cœur du Léman</span>
-                    </h1>
-                    
-                    <p class="text-lg text-gray-600 mb-8">
-                        Depuis 2020, notre équipe de professionnels transforme les espaces extérieurs du bassin lémanique avec un savoir-faire artisanal et une connaissance intime des spécificités locales.
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#contact" class="bg-e-500 hover:bg-e-600 text-white font-medium py-3 px-6 rounded-md transition text-center">
-                            Demander un devis
-                        </a>
-                        <a href="#services" class="border border-gray-300 hover:border-e-500 text-gray-700 hover:text-e-600 font-medium py-3 px-6 rounded-md transition text-center">
-                            Nos services
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="lg:w-1/2 text-center">
-  <img src="grassland-landscape-greening-environment-park-background.jpg" 
-       alt="Jardin bien entretenu" 
-       class="rounded-lg shadow-md w-full mb-3">
-  <p class="text-gray-600 italic text-sm">Jardin bien entretenu – exemple de nos réalisations</p>
-</div>
-                </div>
-            </div>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#accueil" class="text-gray-600 hover:text-alpine-500 transition">Accueil</a>
+        <a href="#apropos" class="text-gray-600 hover:text-alpine-500 transition">Notre histoire</a>
+        <a href="#services" class="text-gray-600 hover:text-alpine-500 transition">Services</a>
+        <a href="#contact" class="text-gray-600 hover:text-alpine-500 transition">Contact</a>
+      </nav>
+
+      <a href="#contact" class="hidden md:inline-block bg-alpine-500 hover:bg-alpine-600 text-white font-semibold py-2 px-5 rounded-full transition shadow-sm">
+        Demander un devis
+      </a>
+
+      <button class="md:hidden text-gray-600">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section améliorée -->
+  <section id="accueil" class="hero-bg py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center">
+      <!-- Texte -->
+      <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-16 animate-fade-in">
+        <span class="inline-block bg-alpine-100 text-alpine-600 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          Expertise locale depuis 5 ans
+        </span>
+        <h1 class="text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+          Paysagistes passionnés <br /><span class="text-alpine-500">au cœur du Léman</span>
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+          Depuis 2020, notre équipe transforme les extérieurs du bassin lémanique avec un savoir-faire artisanal et une connaissance intime du territoire.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="bg-alpine-500 hover:bg-alpine-600 text-white font-semibold py-3 px-6 rounded-full transition shadow">
+            Demander un devis
+          </a>
+          <a href="#services" class="border border-gray-300 hover:border-alpine-500 text-gray-700 hover:text-alpine-600 font-medium py-3 px-6 rounded-full transition">
+            Nos services
+          </a>
         </div>
-    </section>
+      </div>
+
+      <!-- Image -->
+      <div class="lg:w-1/2 text-center animate-fade-in">
+        <img src="grassland-landscape-greening-environment-park-background.jpg" alt="Jardin bien entretenu" class="rounded-xl shadow-lg w-full mb-3" />
+        <p class="text-gray-500 italic text-sm">Jardin bien entretenu – exemple de nos réalisations</p>
+      </div>
+    </div>
+  </section>
 
     <!-- About Section -->
     <section id="apropos" class="py-20 bg-white">
